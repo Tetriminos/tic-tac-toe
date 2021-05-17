@@ -1,0 +1,16 @@
+- [x] Remove synchronize: true from `ormconfig.json` and setup a migration
+- [x] Use variables from the config directory
+- [x] Retry db connection a couple of times (typeorm default turns out to be 30 retries)
+- [x] Check if you've left any console logs
+- [ ] Write API docs
+- [x] Handle errors nicely in the API
+- [x] GameID could be logged as part of the log object, making it nicer to search for
+- [ ] Better AI - some minimax algorithm
+- [x] Extract the app logic from index.ts into app.ts, making it easy peasy to test the server with injected dependencies
+- [x] Subscribe to a particular game, not all games
+- [x] Use Postgres pubsub for horizontal scaling
+- [x] Add return values for all resolvers
+- [x] Don't return player UUID in the `makeAMove` resolver nor via the subscription
+- [ ] Write API tests
+- [ ] Dockerize
+- [ ] Write e2e API test with Docker, composing postgres and the app
